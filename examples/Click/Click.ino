@@ -20,14 +20,14 @@ void setup(){
 	
 	// Try both addresses. If the circuit ends up blinking bright and low bright, it means you have a hardware error.
 	bool on = false;
-  	while( !LIS3DH_Lite::begin(on ? 0x19 : LIS3DH_DEFAULT_ADDRESS) ) {   // change this to 0x19 for alternative i2c address
+  	while( !LIS3DH_Micro::begin(on ? 0x19 : LIS3DH_DEFAULT_ADDRESS) ) {   // change this to 0x19 for alternative i2c address
 		analogWrite(PIN_LED, on ? 5 : 20);
 		on = !on;
 		delay(1000);
   	}
 
 	// Enable the interrupt
-	LIS3DH_Lite::setClick(1, 6);
+	LIS3DH_Micro::setClick(1, 6);
 
 	digitalWrite(PIN_LED, LOW);
 

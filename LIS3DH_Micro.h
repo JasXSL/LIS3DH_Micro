@@ -341,7 +341,7 @@
 	#define SENSOR_RATE 0b1000
 #endif
 
-namespace LIS3DH_Lite{
+namespace LIS3DH_Micro{
 	
 	int8_t _i2caddr;
 
