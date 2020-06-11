@@ -27,13 +27,12 @@
 
 /*
 
-	ENABLE THESE TO OVERRIDE THE DEFAULTS
+	You can override the defaults here if you want.
 
 */
-/*
 #define SENSOR_RANGE LIS3DH_RANGE_2_G 		// 2G
-#define SENSOR_DIVIDER DIVIDER_2_G			// 2G - Needs to match the Gs you set in SENSOR_RANGE
+#define SENSOR_DIVIDER DIVIDER_2_G			// 2G - Needs to match the Gs you set as SENSOR_RANGE above
 #define SENSOR_RATE LIS3DH_DATARATE_LOWPOWER_1K6HZ		// 1k6hz datarate
-*/
+
 
 #endif
